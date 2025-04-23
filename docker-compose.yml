@@ -1,0 +1,8 @@
+version: "3"
+services:
+  streamlit:
+    build: .
+    container_name: streamlit-app
+    ports:
+      - "9000:9000"  # 외부 80 -> 내부 9000
+    restart: always
